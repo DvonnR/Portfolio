@@ -87,12 +87,12 @@
     }
     
     .fix{
-        width:440px;
+        width:90vw;
         margin:20px 0 0 2.5px;
         padding-right:1vw;  
     }
     .bio{
-        width:400px;
+        width:80vw;
         margin:20px auto 0 auto;
         text-align:center;
         padding-bottom:20px;
@@ -343,7 +343,7 @@
     .container{
         display:grid;
         grid-template-columns: repeat(12,1fr);
-        grid-template-rows: 90px auto auto;
+        grid-template-rows: auto auto auto auto auto;
         grid-gap:5px;
         margin:auto;
         justify-content: center;
@@ -361,7 +361,7 @@
     
     /*Menu Section*/
     .menu{
-        grid-column:1/-1;
+        grid-area:1/2/2/12;
         background-color:#39404e;
         height:70px;
     }
@@ -372,37 +372,42 @@
 
     .nav{
         float:right;
+        
         margin:0 auto 0 auto;
-        padding:0 0 0 130px;
+        padding:0 0 0 50px;
         width:550px;
+        background-color:green;
        
     }
     
     .nav1{
         font-size:1.3em;
-        margin-right:10px;;
+        margin-right:0px;;
+        background-color:red;
+        display:inline-block;
+        width:150px;
     }
 
    
     /*Avatar section*/
     .avatar{
-        grid-column:1/3;
+        grid-area:2/2/2/4;
         color:white;
         background-color:#39404e;
         justify-content: center;
         text-align: center;
-        height:500px;
+        height:auto;
+        
     }
     .ava{
         position:relative;
         width:150px;
-        margin:30px 0 0 0;
+        margin:5vw 0 0 0;
     }
     
     /*About section*/
     .about{
-        grid-column:1/6;
-        display: justify;
+        grid-area:2/4/2/12;
         background-color:#39404e;
         justify-content: center;
         text-align: center;
@@ -411,25 +416,32 @@
     }
     .head{
         background-color:rgb(37, 103, 141);
-        
         height:40px;
     }
-    
+
+    .holder{
+        
+        width:auto;
+        margin:30px 50px 0 50px;
+        
+    }
+
     .fix{
-        width:440px;
-        margin:20px auto 0 auto;
-        padding-right:1vw;  
+        width:300px;
+        margin:10px 0 0 100px;
+        padding-right:1vw;
+        float:left;
     }
     .bio{
-        width:500px;
-        margin:20px auto 0 auto;
-        text-align:center;
+        width:auto;
+        margin:20px 100px 0 100px;
+        text-align:justify;
         padding-bottom:20px;
     }
     
     /*Skill section*/
     .skill{
-        grid-column:1/-1;
+        grid-area:3/2/5/12;
         background-color:#39404e;
         text-align: center;
         color:white;
@@ -442,7 +454,7 @@
     .list{
        margin-top:20px;
        display:inline-grid;
-       grid-template-columns:auto auto;
+       grid-template-columns:auto auto auto;
        column-gap:100px;
         row-gap:50px;
         
@@ -460,7 +472,7 @@
     
     /*project section*/
     .project{
-        grid-column: 1/-1;
+        grid-area:5/2/6/12;
         text-align:center;
         background-color:#39404e;
         color:white;
@@ -472,7 +484,7 @@
     .top{
         margin:20px 0 0 0 ;
         display:inline-grid;
-        grid-template-columns: auto auto;;
+        grid-template-columns: auto auto auto;;
         column-gap:100px;
         row-gap:50px;
     }
@@ -490,10 +502,12 @@
     
     /*contact Info*/
     .contact{
-        grid-column: 1/-1;
+        grid-area:6/2/7/12;
         background-color:#39404e;
         text-align:center;
-        color:white;        
+        color:white;    
+        margin-bottom:30px;    
+        padding-bottom:10px;
     }
     .foot{
         font-size: 1.1em;;
